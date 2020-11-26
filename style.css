@@ -7,7 +7,6 @@ body {
 	font-family: Helvetica; 
     background-image: linear-gradient(to bottom right, #2E0854, #4B0082, #32174d);
     padding: 30px;
-   		 border: solid yellow 2px; /**********/
 }
 
 header {
@@ -17,7 +16,6 @@ header {
 	grid-template-columns:  3fr 1fr;
 	grid-gap: 30px;
 	padding-bottom: 3rem;
-	    border: solid yellow 2px; /**********/
 
 }
 
@@ -28,14 +26,12 @@ img {
 	border-radius: 50%;
 	border:solid 2px #61ffb2;
     align-self: center;  
-       		 border: solid yellow 2px; /**********/
 
 }
 
 header > section  {
 	display: inline-block;
 	margin-left: 100px;
-	   		 border: solid yellow 2px; /**********/
 
 }
 
@@ -45,14 +41,12 @@ color: #61ffb2;
 
 font-size: 4rem;
 display: inline;
-	   		 border: solid yellow 2px; /**********/
 
 }
 
 
 header > section > p {
 	font-family: 'Noto Sans JP', sans-serif;
-	   		 border: solid yellow 2px; /**********/
 
 }
 
