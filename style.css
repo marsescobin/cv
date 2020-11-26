@@ -40,7 +40,7 @@ font-family: 'Work Sans', sans-serif;
 color: #61ffb2;
 
 font-size: 4rem;
-display: inline;
+display: inline-block;
 
 }
 
@@ -196,12 +196,9 @@ main > #projects > div:nth-child(4n) {
 
 /*TIMELINE*/
 
-#timeline >  h1 {
+#timeline >  h2 {
 	margin-right: 3rem;
 	margin-top: 5rem;
-	display: grid;
-	grid-template-columns: 1fr, 1fr; 
-	grid-template-rows: 1fr;
 	align-self: end;
 	justify-content: end;
 }
@@ -267,10 +264,9 @@ main > #projects > div:nth-child(4n) {
 	text-align: center;
  	 align-items: center;
  	 cursor: pointer;
- 	  padding: 30px 0;
 }
 
-#timeline > .container > div > .disp  {
+#timeline > .container > div > .disp,  {
 	color: white;
  	 align-items: center;
  	 cursor: pointer;
@@ -289,26 +285,23 @@ main > #projects > div:nth-child(4n) {
 	text-align: end;
 	 align-items: center;
 	 cursor: pointer;
- 	 padding: 30px 0;
 }
 
 #timeline > .container:nth-child(even) > div > .disp {
 	text-align: start;
 	 align-items: center;
 	 cursor: pointer;
- 	 padding: 30px 0;
 }
 
 
 #timeline > .container > div > p {
 	 text-align: justify;
  	 align-items: center;
- 	 margin: 30px 0;
 }
 
 #timeline >.container:last-child {
   border-bottom: 2px dashed #61ffb2;
-  border-bottom-right-radius: none;
+  border-bottom-right-radius: none
   border-radius: none;
 }
 
@@ -447,6 +440,7 @@ html {
 	width: 390px;
 }
 
+
 body {
 	grid-template-columns: 2fr 6fr 1fr; 
 	grid-template-rows: minmax(25px,auto);
@@ -460,19 +454,23 @@ header {
 	display: grid;
 	grid-template-columns:  1fr;
 	grid-gap: 30px;
-	padding-bottom: 3rem;
+	padding-bottom: 0rem;
 
 }
 
 header > section  {
-	display: inline-block;
+	display: inline;
 	margin-left: 0px;
+	margin-top: 25px;
 
 }
 
 #links {
 	display: block;
+	margin-left:0;
 }
+
+
 
 img {
 	display: inline-block;
@@ -488,12 +486,70 @@ img {
 header > section > h1{
 font-family: 'Work Sans', sans-serif;
 color: #61ffb2;
-
-font-size: 3rem;
+font-size: 1.75rem;
 display: inline;
 
 }
 
+#timeline {
+	grid-template-rows: repeat(6,minmax(50px,auto));
+	margin-left: 0px;	
+	margin-right: 0;
+	align-items: center;
+
+}
+
+#timeline > .container {
+	border-top: dashed 2px #61ffb2;
+	margin:0; 
+	display: grid;
+	grid-template-rows: minmax(50px,auto);
+ 
+}
+
+#timeline > .container {
+}
+
+#timeline >  h2 {
+	font-size: 1rem;
+	margin-right: 3rem;
+	margin-top: 1rem;
+	text-align: end;
+}
+
+#timeline >  .container > div > h4 {
+	font-size: .8rem;
+	display: block;
+	vertical-align: middle;
+
+}
+
+#timeline > .container > div > .year {
+	color: #2E0854;
+	text-align: center;
+ 	 align-items: center;
+ 	 cursor: pointer;
+}
+
+#timeline > .container > div > p {
+font-size: 12px;
+}
+ #timeline > .container:nth-child(even) {
+  border-left: 2px dashed #61ffb2;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  grid-template-columns: 2fr 5fr;
+  margin-right: 30px; 
+  padding-right: 0;
+}
+ #timeline > .container:nth-child(odd) {
+  border-right: 2px dashed #61ffb2;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  grid-template-columns: 5fr 2fr;
+  margin-left: 30px; 
+ padding-left: 0;
+}
 
 header > section > p {
 	font-family: 'Noto Sans JP', sans-serif;
@@ -508,6 +564,87 @@ cursor: pointer;
 
 
 }
+
+
+
+#intro > h1 {
+	font-size: 1.25rem;
+
+}
+
+
+button {
+	padding: 6px;
+	margin: 5px auto;
+	font-size: 12px;
+}
+
+main {
+	grid-row: 3/4;
+	grid-column: 1/4; 
+	margin-top: 0rem; 
+
+}
+
+main  > h2 {
+	font-size: 1rem;
+	font-family: 'Work Sans', sans-serif;
+
+}
+
+main > #projects  {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3,minmax(150px,auto));
+	grid-gap: .25rem;
+	margin-right: 0rem;
+	margin-left: 0rem;
+}
+
+main > #projects > div > p {
+	color: #2E0854;
+	text-align: center;
+	display: block;
+	margin: 6px;
+	font-size: 10px;
+	padding: 0 10px;
+}
+
+main > #projects > div > p > span {
+	display: block;
+	font-size: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+
+}
+
+
+nav	{
+	margin-top: 3rem; 
+	grid-row: 4/5;
+	grid-column: 1/9;
+	
+}
+
+nav  > button {
+margin: 1px;
+}
+
+nav > h3{
+font-family: 'Work Sans', sans-serif;
+font-size: 1rem;
+}
+
+.collapsible{
+margin: 5px;
+display: block;
+background-color: #4B0082;
+color: white;
+border: 1px  #61ffb2 solid; 
+padding: 6px;
+cursor: pointer;
+}
+
+
 
 }
 
