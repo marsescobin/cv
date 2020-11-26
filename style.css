@@ -266,7 +266,7 @@ main > #projects > div:nth-child(4n) {
  	 cursor: pointer;
 }
 
-#timeline > .container > div > .disp,  {
+#timeline > .container > div > .disp  {
 	color: white;
  	 align-items: center;
  	 cursor: pointer;
@@ -301,7 +301,7 @@ main > #projects > div:nth-child(4n) {
 
 #timeline >.container:last-child {
   border-bottom: 2px dashed #61ffb2;
-  border-bottom-right-radius: none
+  border-bottom-right-radius: none;
   border-radius: none;
 }
 
@@ -461,8 +461,7 @@ header {
 header > section  {
 	display: inline;
 	margin-left: 0px;
-	margin-top: 25px;
-
+	/*margin-top: 25px;*/
 }
 
 #links {
@@ -520,8 +519,6 @@ display: inline;
 #timeline >  .container > div > h4 {
 	font-size: .8rem;
 	display: block;
-	vertical-align: middle;
-
 }
 
 #timeline > .container > div > .year {
