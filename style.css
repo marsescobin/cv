@@ -436,10 +436,6 @@ background: linear-gradient(to right, rgba(81, 203, 238, 1) 95%, #4B0082 0%);
 
 @media only screen and (max-width: 1300px) {
 
-html {
-	
-}
-
 
 body {
 	grid-template-columns: 2fr 6fr 1fr; 
@@ -512,8 +508,6 @@ display: inline;
  
 }
 
-#timeline > .container {
-}
 
 #timeline >  h2 {
 	font-size: 1rem;
@@ -525,8 +519,6 @@ display: inline;
 #timeline >  .container > div > h4 {
 	font-size: .8rem;
 	display: block;
-	vertical-align: middle;
-
 }
 
 #timeline > .container > div > .year {
