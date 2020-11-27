@@ -31,7 +31,7 @@ img {
 
 header > section  {
 	display: inline-block;
-	margin-left: 100px;
+	margin-left: 0px;
 
 }
 
@@ -434,8 +434,11 @@ background: linear-gradient(to right, rgba(81, 203, 238, 1) 95%, #4B0082 0%);
 
 /*MEDIAAAAAAA*/
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 1300px) {
 
+html {
+	
+}
 
 
 body {
@@ -455,11 +458,14 @@ header {
 
 }
 
-header > section  {
-	display: inline;
+header > #Hi  {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 	margin-left: 0px;
+	margin-top: 25px;
 
 }
+
 
 #links {
 	display: block;
@@ -467,19 +473,22 @@ header > section  {
 }
 
 
+#div4img {
+	display: grid;
+	justify-items: center;
+}
 
 img {
-	display: inline-block;
 	height: 75px;
 	width: 75px;
 	border-radius: 50%;
 	border:solid 2px #61ffb2;
-    align-self: center;  
+    align-self: end;  
 
 }
 
 
-header > section > h1{
+header > section > div > h1{
 font-family: 'Work Sans', sans-serif;
 color: #61ffb2;
 font-size: 1.75rem;
@@ -503,6 +512,8 @@ display: inline;
  
 }
 
+#timeline > .container {
+}
 
 #timeline >  h2 {
 	font-size: 1rem;
