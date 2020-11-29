@@ -736,9 +736,6 @@ img {
 
 
 
-
-
-
 #timeline {
 	grid-template-rows: repeat(6,minmax(50px,auto));
 	margin-left: 3rem;	
@@ -1183,7 +1180,6 @@ main > #projects  {
 
 }
 
-
 }
 
 
@@ -1227,5 +1223,5 @@ main > #projects > a {
 }
 
 
-}
 
+}
