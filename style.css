@@ -93,12 +93,17 @@ main > #intro > p {
 
 }
 
-main > #intro > button {
+.cv-button {
 background-color: #61ffb2;
 cursor: pointer;
 
-
 }
+
+.cv-button > a {
+	text-decoration: none;
+	color: black;
+}
+
 
 main > #intro  > h1{
 font-family: 'Work Sans', sans-serif;
@@ -117,12 +122,10 @@ main > #intro > p {
 
 /*PROJECTS*/
 
-main > #projects {
-	display: grid; 
 
-}
 
 main > #projects  {
+	display: grid; 
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3,minmax(150px,auto));
 	grid-gap: 2rem;
@@ -131,46 +134,52 @@ main > #projects  {
 
 }
 
-main > #projects > div {
-	 display: grid;
-	 opacity: 0.8;
-	 align-items: center;
-	 cursor: pointer;
+main > #projects > a {
+	display: grid;
+	text-decoration: none;
+	opacity: 0.8;
+
 }
 
-main > #projects > div:hover {
+main > #projects > a > div {
+	 align-items: center;
+	 cursor: pointer;
+	 align-self: center;
+}
+
+main > #projects > a:hover {
 	 opacity: 1;
 	 border: 2px solid rgba(81, 203, 238, 1);
 }
 
-main > #projects > div > p {
+main > #projects > a > div > p {
 	color: #2E0854;
 	text-align: center;
 	display: block;
 	margin: 10px;
 }
 
-main > #projects > div > p > span {
+main > #projects > a > div > p > span {
 	display: block;
 	font-size: .8rem;
 	padding-right: 5px;
 	padding-left: 5px;
 
 }
-main > #projects > div:nth-child(even){
+main > #projects > a:nth-child(even){
 	background-color: #cbffe8;
 
 }
 
-main > #projects > div:nth-child(odd) {
+main > #projects > a:nth-child(odd) {
 	background-color: #f9ecff;
 }
 
-main > #projects > div:nth-child(5n) {
+main > #projects > a:nth-child(5n) {
 	background-color:#E6E6CA;
 }
 
-main > #projects > div:nth-child(4n) {
+main > #projects > a:nth-child(4n) {
 	background-color: #E6B9A1;
 }
 
@@ -205,7 +214,8 @@ main > #projects > div:nth-child(4n) {
 	color: #2E0854;
 	text-align: center;
  	 align-items: center;
- 	 cursor: pointer;
+ 	  	 padding: 10px 0;
+
 }
 
 #timeline > .container > div > .disp {
@@ -259,7 +269,6 @@ border: none;
 .cv-button {
 padding: 12px;
 margin-top: 1rem;
-
 }
 
 
@@ -301,71 +310,132 @@ cursor: pointer;
 }
 
 
-.collapsible:hover {
-	border: 2px solid #61ffb2;
-	text-align: center;
-	color: white;
+
+
+
+#webdevelopment, 
+#webscraping, 
+#datawrangling, 
+#datanalysis, 
+#datavisualization, 
+#apiintegration, 
+#operationsmanagement, 
+#accountmanagement, 
+#projectmanagement, 
+#productmanagement, #marketingsales, 
+#contentwriting
+
+ {
+	--initialBgColor: #4B0082;
+	--initialTextColor: white;
+
+    --slideBgColor: white;
+    --slideTextColor:  #4B0082;
+
+    color: var(--initialTextColor);
+
+    background-image: linear-gradient(90deg,
+          var(--initialBgColor) 0%,
+          var(--initialBgColor) 50%,
+          var(--slideBgColor) 50%,
+          var(--slideBgColor) 75%);
+    background-size: 200%;
+    transition: background-position .3s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+    transition-delay: 0.0s, 0.15s;
 }
 
-#webdevelopment {
-		background-image: linear-gradient(to right, rgba(81, 203, 238, 1) 50%, #4B0082 50%);
-		transition: background-position 5s;
-		background-size: 200% 200%;
-		background-position: 0 2100%;
-
-
-
-}
 
 #webdevelopment:hover {
-		  background-position: right;
-
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -60% 100%;
 }
+
 
 #webscraping:hover {
-		background-image: linear-gradient(to right, rgba(81, 203, 238, 1) 90%, #4B0082 0%);
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -95% 100%;
 
 }
-#chatbotdevelopment:hover {
- background: linear-gradient(to right, rgba(81, 203, 238, 1) 65%, #4B0082 0%);
+
+
+#datawrangling:hover {
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -80% 100%;
+
 }
 
 
 #datanalysis:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 97%, #4B0082 0%);
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -97% 100%;
+
 }
 
 
 #datavisualization:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 80%, #4B0082 0%);
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -80% 100%;
+
 }
 
+
 #apiintegration:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 80%, #4B0082 0%);
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -90% 100%;
+
 }
 
 #operationsmanagement:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 95%, #4B0082 0%);
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -99% 100%;
 }
 
-#clientrelationshipmanagement:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 90%, #4B0082 0%);
+#accountmanagement:hover {
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -95% 100%;
+
 }
 
-#agileprojectmanagement:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 80%, #4B0082 0%);
+
+#projectmanagement:hover {
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -90% 100%;
+
 }
 
-#sales:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 67.5%, #4B0082 0%);
+
+
+#productmanagement:hover {
+color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -75% 100%;
+
 }
 
-#marketing:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 75%, #4B0082 0%);
+
+#marketingsales:hover {
+	color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -93% 100%;
+
 }
+
 
 #contentwriting:hover {
-background: linear-gradient(to right, rgba(81, 203, 238, 1) 95%, #4B0082 0%);
+	color: var(--slideTextColor);
+ cursor: pointer;
+ background-position: -87% 100%;
+
+
 }
 
 
@@ -457,7 +527,12 @@ display: inline;
 	font-size: 1rem;
 	margin-right: 3rem;
 	margin-top: 1rem;
-	text-align: end;
+	text-align: center;
+
+}
+
+.marquee {
+    white-space: nowrap;
 }
 
 #timeline >  .container > div > h4 {
@@ -470,7 +545,7 @@ display: inline;
 	color: #2E0854;
 	text-align: center;
  	 align-items: center;
- 	 cursor: pointer;
+
 }
 
 #timeline > .container > div > p {
@@ -514,6 +589,8 @@ padding: 9px;
 
 }
 
+
+
 main {
 	grid-row: 4/5;
 	grid-column: 1/9; 
@@ -535,7 +612,11 @@ main > #projects  {
 	margin-left: 0rem;
 }
 
-main > #projects > div > p {
+main > #projects > a {
+	display: grid;
+}
+
+main > #projects > a > div > p {
 	color: #2E0854;
 	text-align: center;
 	display: block;
@@ -544,7 +625,7 @@ main > #projects > div > p {
 	padding: 0 10px;
 }
 
-main > #projects > div > p > span {
+main > #projects > a > div > p > span {
 	display: block;
 	font-size: 10px;
 	padding-right: 5px;
@@ -685,7 +766,7 @@ img {
 	font-size: 1.25rem;
 	margin-right: 3rem;
 	margin-top: 1rem;
-	text-align: end;
+	text-align: center;
 }
 
 #timeline >  .container > div > h4 {
@@ -698,7 +779,6 @@ img {
 	color: #2E0854;
 	text-align: center;
  	 align-items: center;
- 	 cursor: pointer;
 }
 
 #timeline > .container > div > p {
@@ -770,7 +850,7 @@ main > #projects  {
 	margin-left: 0rem;
 }
 
-main > #projects > div > p {
+main > #projects > a > div > p {
 	color: #2E0854;
 	text-align: center;
 	display: block;
@@ -779,7 +859,7 @@ main > #projects > div > p {
 	padding: 0 10px;
 }
 
-main > #projects > div > p > span {
+main > #projects > a > div > p > span {
 	display: block;
 	font-size: 12px;
 	padding-right: 5px;
@@ -858,12 +938,16 @@ main > #projects {
 	padding: 1rem;
 }
 
-main > #projects div > p {
+main > #projects > a {
+	display: grid;
+}
+
+main > #projects > a > div > p {
 	font-size: 14px;
 
 }
 
-main > #projects div > span {
+main > #projects a > div > p > span {
 	font-size: 13px;
 }
 
@@ -989,11 +1073,7 @@ cursor: pointer;
 
 }
 
-header > section > button:hover {
-border: 2px solid rgba(81, 203, 238, 1);
-background-color: white;
 
-}
 
 
 #timeline {
@@ -1007,8 +1087,7 @@ background-color: white;
 #timeline >  h2 {
 	margin-right: 2rem;
 	margin-top: 0rem;
-	align-self: end;
-text-align: end
+text-align: center;
 }
 
 #timeline > .container > div > h4 {
@@ -1087,6 +1166,7 @@ main > #intro {
 	display: block;
 	grid-row: 1/2;
 	margin-top: 0rem;
+	margin-bottom: 2rem;
 }
 
 main > #intro > p {
@@ -1103,36 +1183,49 @@ main > #projects  {
 
 }
 
+
 }
-
-
 
 
 @media only screen and (min-width: 1024px) {
 
-	header {
-		grid-template-columns: 2fr 4fr;
-	}
+header {
+	grid-template-columns: 2fr 4fr;
+}
 
-	#timeline {
-		grid-template-rows: repeat(6,minmax(150px,auto));
-		margin-right: 8rem;
-		align-items: center;
-
-	}
-
-	body {
-		grid-template-columns: 2fr 6fr 1fr; 
-	}
-
-	main {
-		display: grid;
-	}
-
-
-	main > #projects {
-		grid-gap: 1rem;
-		margin-right: 5rem;
-	}
+#timeline {
+	grid-template-rows: repeat(6,minmax(150px,auto));
+	margin-right: 8rem;
+	align-items: center;
 
 }
+
+#timeline > h2 {
+font-size: 2rem;
+}
+
+#timeline > .container >div > p {
+	font-size: 18px;
+}
+
+body {
+	grid-template-columns: 2fr 6fr 1fr; 
+}
+
+main {
+	display: grid;
+}
+
+
+main > #projects {
+	grid-gap: 1rem;
+	margin-right: 5rem;
+}
+
+main > #projects > a {
+	display: grid;
+}
+
+
+}
+
