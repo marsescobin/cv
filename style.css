@@ -24,9 +24,8 @@ font-family: 'Work Sans', sans-serif;
 
 #stack > button {
 margin: 3px;
+background-color: #d8b67d;
 }
-
-
 
 
 #stack > button:nth-child(even) {
@@ -214,14 +213,20 @@ main > #projects > a:nth-child(4n) {
 	color: #2E0854;
 	text-align: center;
  	 align-items: center;
- 	  	 padding: 10px 0;
+ 	 display: grid;
 
 }
+
+#timeline > .container > div {
+	display: grid;
+}
+
 
 #timeline > .container > div > .disp {
 	color: white;
  	 align-items: center;
  	 cursor: pointer;
+ 	 display: grid;
 
 }
 
@@ -237,12 +242,14 @@ main > #projects > a:nth-child(4n) {
 	text-align: end;
 	 align-items: center;
 	 cursor: pointer;
+
 }
 
 #timeline > .container:nth-child(even) > div > .disp {
 	text-align: start;
 	 align-items: center;
 	 cursor: pointer;
+	 	
 }
 
 
@@ -1183,8 +1190,8 @@ main > #projects  {
 
 }
 
-
 }
+
 
 
 
