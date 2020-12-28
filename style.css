@@ -1196,6 +1196,7 @@ main > #projects  {
 
 header {
 	grid-template-columns: 2fr 4fr;
+	margin-bottom: 5rem;
 }
 
 header > #Hi  {
